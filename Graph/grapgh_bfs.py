@@ -11,3 +11,13 @@ def bfs(graph, start_v):
                 visited.append(v)
                 queue.append(v)
     return visited
+
+
+graph = {
+    "A": ["B", "D", "E"],
+    "B": ["A", "C", "D"],
+    "C": ["B"],
+    "D": ["A", "B"],
+    "E": ["A"],
+}
+bfs(graph, "A")
