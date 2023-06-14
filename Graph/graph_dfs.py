@@ -13,3 +13,6 @@ def dfs(cur_v):
     for v in graph[cur_v]:
         if v not in visited:
             dfs(v)
+
+
+dfs(graph, "A")
